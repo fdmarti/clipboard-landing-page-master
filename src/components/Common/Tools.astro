@@ -1,0 +1,36 @@
+---
+const { title, text, urlImage } = Astro.props;
+---
+
+<div class='tool'>
+    <img src=`/images/${urlImage}` alt=`${title} icon` />
+    <h4>{title}</h4>
+    <p>{text}</p>
+</div>
+<style>
+    .tool {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    img {
+        width: 40px;
+    }
+
+    h4 {
+        font-size: 24px;
+        margin: 0;
+        color: var(--grayish);
+    }
+
+    p {
+        font-size: 18px;
+        color: var(--grayishBlue);
+        line-height: 30px;
+        max-width: 350px;
+    }
+</style>

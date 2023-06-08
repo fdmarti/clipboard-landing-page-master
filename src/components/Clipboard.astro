@@ -1,0 +1,22 @@
+---
+import ButtonsDownload from './Common/ButtonsDownload.astro';
+import TitleTextComponent from './Common/TitleTextComponent.astro';
+---
+
+<div class='clipboard'>
+    <TitleTextComponent
+        title='Clipboard for iOS and Mac OS'
+        text='Available for free on the App Store. Download for Mac or iOS, sync with iCloud and you’re ready to start adding to your clipboard.'
+    />
+    <ButtonsDownload />
+</div>
+
+<style>
+    .clipboard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 120px 0;
+        text-align: center;
+    }
+</style>

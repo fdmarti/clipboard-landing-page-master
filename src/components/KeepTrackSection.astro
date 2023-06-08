@@ -1,0 +1,62 @@
+---
+import TitleTextComponent from './Common/TitleTextComponent.astro';
+import ExtraTextInformation from './Common/ExtraTextInformation.astro';
+---
+
+<div class='keep-track'>
+    <TitleTextComponent
+        title='Keep track of your snippets'
+        text='Clipboard instantly stores any item you copy in the cloud, meaning you can access your snippets immediately on all your devices. Our Mac and iOS apps will help you organize everything.'
+    />
+    <section class='keep-track-options'>
+        <section class='computer-image'>
+            <img
+                src='/images/image-computer.png'
+                alt='computer image in clipboard'
+            />
+        </section>
+        <section class='options-section'>
+            <ExtraTextInformation
+                title='Quick Search'
+                text='Easily search your snippets by content, category, web address, application, and more.'
+            />
+            <ExtraTextInformation
+                title='iCloud Sync'
+                text='Instantly saves and syncs snippets across all your devices.'
+            />
+            <ExtraTextInformation
+                title='Complete History'
+                text='Retrieve any snippets from the first moment you started using the app.'
+            />
+        </section>
+    </section>
+</div>
+<style>
+    .keep-track {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+        text-align: center;
+    }
+
+    .keep-track-options {
+        display: flex;
+        align-items: center;
+        gap: 8rem;
+        margin-top: 90px;
+    }
+
+    .options-section {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: -100px;
+    }
+
+    @media (max-width: 768px) {
+        .keep-track-options {
+            flex-direction: column;
+        }
+    }
+</style>

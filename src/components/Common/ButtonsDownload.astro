@@ -1,0 +1,49 @@
+<section class='btn-download'>
+    <button class='btn-ios'>Download for iOS</button>
+    <button class='btn-mac'>Download for Mac</button>
+</section>
+<style>
+    .btn-download {
+        display: flex;
+        margin-top: 30px;
+        gap: 1.5rem;
+    }
+    button {
+        padding: 15px 30px;
+        border-radius: 25px;
+        color: var(--white);
+        font-size: 17px;
+        letter-spacing: 1px;
+    }
+
+    .btn-ios {
+        background-color: var(--strongCyan);
+        border: solid 2px var(--strongCyanBorder);
+        box-shadow: 0 0 15px -5px var(--strongCyan);
+    }
+
+    .btn-ios:hover {
+        background-color: var(--strongCyanHover);
+        border: solid 2px var(--strongCyanHover);
+        cursor: pointer;
+    }
+
+    .btn-mac {
+        background-color: var(--lightBlue);
+        border: solid 2px var(--lightBlueBorder);
+        box-shadow: 0 0 15px -5px var(--lightBlue);
+    }
+
+    .btn-mac:hover {
+        background-color: var(--lightBlueHover);
+        border: solid 2px var(--lightBlueHover);
+        cursor: pointer;
+    }
+
+    @media (max-width:600px) {
+        .btn-download {
+            flex-direction: column;
+        }
+    }
+
+</style>

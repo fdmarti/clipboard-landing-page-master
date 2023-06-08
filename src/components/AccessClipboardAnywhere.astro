@@ -1,0 +1,24 @@
+---
+import TitleTextComponent from './Common/TitleTextComponent.astro';
+---
+
+<div class='access-clipboard'>
+    <TitleTextComponent
+        title='Access Clipboard anywhere'
+        text='Whether you’re on the go, or at your computer, you can access all your Clipboard snippets in a few simple clicks.'
+    />
+
+    <section class='devices-image'>
+        <img src='/images/image-devices.png' alt='devices image in clipboard' />
+    </section>
+</div>
+<style>
+    .access-clipboard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+        text-align: center;
+        gap: 5rem;
+    }
+</style>
