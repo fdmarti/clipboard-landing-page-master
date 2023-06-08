@@ -53,6 +53,10 @@ import SocialMedia from './SocialMedia.astro';
         font-size: 17px;
     }
 
+    ul {
+        padding: 0;
+    }
+
     @media (max-width: 768px) {
         .content-footer {
             flex-direction: column;
@@ -61,6 +65,7 @@ import SocialMedia from './SocialMedia.astro';
 
         .external-links {
             grid-template-columns: 1fr;
+            text-align: center;
         }
     }
 </style>
